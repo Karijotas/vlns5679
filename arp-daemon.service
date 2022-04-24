@@ -1,0 +1,12 @@
+[Unit]
+Description=Arp Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=mantas
+ExecStart="/home/mantas/arp.sh"
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
